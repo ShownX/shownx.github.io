@@ -5,7 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xiang Xu</title>
+  <title>Xiang Xu — Tech Lead, Senior Applied Scientist</title>
+
+  <meta name="description" content="Xiang Xu is a Tech Lead and Senior Applied Scientist at AWS AI Labs working on agentic AI, alignment and safety, post-training, and lifelong learning for foundation models.">
+  <meta name="author" content="Xiang Xu">
+  <meta name="keywords" content="Xiang Xu, AWS AI Labs, agentic AI, multi-agent systems, alignment, safety, post-training, continual learning, lifelong learning, vision-language models, deepfake detection, digital identity">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Xiang Xu — Tech Lead, Senior Applied Scientist">
+  <meta property="og:description" content="Agentic AI, alignment and safety, post-training, and lifelong learning for foundation models. AWS AI Labs.">
+  <meta property="og:url" content="https://shownx.github.io/">
+  <meta property="og:image" content="https://shownx.github.io/assets/images/me.jpg">
 
   <!--
     - favicon
@@ -47,7 +58,7 @@
 
         <div class="info-content">
           <h1 class="name" title="Xiang Xu">Xiang Xu</h1>
-          <p class="title">Senior Applied Scientist</p>
+          <p class="title">Tech Lead, Senior Applied Scientist</p>
           <p class="title" style="margin-top: 10px;">AWS AI Labs</p>
         </div>
 
@@ -100,14 +111,20 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://scholar.google.com/citations?user=Khfy-80AAAAJ" class="social-link">
+            <a href="https://scholar.google.com/citations?user=Khfy-80AAAAJ" class="social-link" aria-label="Google Scholar">
               <ion-icon name="logo-google"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/shownx" class="social-link">
+            <a href="https://www.linkedin.com/in/shownx" class="social-link" aria-label="LinkedIn">
               <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/ShownX" class="social-link" aria-label="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
@@ -138,18 +155,18 @@
           <li class="navbar-item">
             <button class="navbar-link  active" data-nav-link>About</button>
           </li>
-          
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Publications</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>CV</button>
           </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
 
         </ul>
 
@@ -163,133 +180,163 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">About</h2>
+        </header>
+
+        <section class="about-text">
+          <p style="font-size: 17px; line-height: 1.55; color: var(--white-2);">
+            <b>I work on co-designing lifelong learning and adversarial post-training so foundation models keep improving themselves while staying aligned in production.</b>
+          </p>
+
+          <p>
+            I am a Tech Lead and Senior Applied Scientist at <a href="https://www.amazon.science/" style="color:burlywood; display:inline">AWS AI Labs</a>. The questions that drive me are practical: how do you update a deployed multi-modal model fast enough to keep up with attackers without losing what it already knew? How do you align a model continuously, not as a one-shot post-training step? How much of that loop can a multi-agent system run on its own?
+          </p>
+
+          <p>
+            Most of my work moves between two layers — the systems I ship and the research that backs them. The self-evolving agent that triages threats, runs red-teaming, and patches models autonomously informs my research on continual on-policy distillation. The continual-learning benchmark I designed informs the next iteration of the agent. I think this is the right loop for an industry scientist: research grounded in real failure modes, systems grounded in defensible ideas.
+          </p>
+
+          <p>
+            Before AWS I did my Ph.D. at the <a href="https://www.uh.edu/" style="color:burlywood; display:inline">University of Houston</a> with Professor <a href="https://www.uh.edu/cbl/people/about-director.php" style="color:burlywood; display:inline">Ioannis A. Kakadiaris</a> (2014–2019), working on face recognition, 3D reconstruction, and adversarial robustness. I have published 30+ papers at CVPR, ICCV, ECCV, and NeurIPS (<a href="https://scholar.google.com/citations?user=Khfy-80AAAAJ" style="color:burlywood; display:inline">1,600+ citations, h-index 10</a>, 2 orals, 1 best paper). I review regularly for the top CV and ML venues.
+          </p>
+
+          <p>
+            <b>Prospective interns:</b> if you are a Ph.D. student interested in agentic systems, alignment, or lifelong learning of foundation models, email me your CV and a short research statement.
+          </p>
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title">Currently working on</h3>
+          <ul style="padding-left: 18px;">
+            <li><div class="service-item-text" style="margin-bottom: 8px;"><b>Continual on-policy distillation from experts</b> — letting a single model absorb capabilities from many specialists without forgetting, while routing inputs to the right expertise at inference.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 8px;"><b>More natural continual learning for VLMs</b> — moving past the disjoint-task assumption that dominates the literature, with a benchmark that controls inter-task overlap.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 8px;"><b>Hybrid attention/recurrent architectures</b> for long-context agentic workloads where attention is the latency bottleneck.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 8px;"><b>Adversarial post-training for production cadence</b> — what the RLHF playbook gets wrong when the threat model is alive and adapting.</div></li>
+          </ul>
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title">News</h3>
+          <ul>
+            <li><div class="service-item-text">[2026/03] Submitted <em>Continual On-Policy Distillation from Experts</em> to NeurIPS 2026.</div></li>
+            <li><div class="service-item-text">[2026/02] Submitted <em>Beyond Disjoint Tasks: Towards More Natural Continual Learning for Vision-Language Models</em> to ECCV 2026.</div></li>
+            <li><div class="service-item-text">[2025/09] Paper <em>Salient Concept-Aware Generative Data Augmentation</em> accepted to NeurIPS 2025.</div></li>
+            <li><div class="service-item-text">[2025/05] Two patents granted on digital identity and trust systems.</div></li>
+            <li><div class="service-item-text">[2025/03] Three papers accepted at CVPR 2025 on model diagnosis, source-free anti-spoofing adaptation, and grounded VLMs <a href="https://www.linkedin.com/feed/update/urn:li:activity:7339443093512830979/" style="color:burlywood; display:inline">[Link]</a>.</div></li>
+            <li><div class="service-item-text">[2024/07] Patent granted: <em>Evaluating biometric authorization systems with synthesized images</em>.</div></li>
+            <li><div class="service-item-text">[2024/04] Keynote, 5th Chalearn Face Anti-Spoofing Workshop and Challenge @ CVPR 2024 <a href="https://sites.google.com/view/face-anti-spoofing-challenge/welcome/challengecvpr2024" style="color:burlywood; display:inline">[Link]</a>.</div></li>
+            <li><div class="service-item-text">[2024/04] <em>Sharpness-Aware Optimization for Real-World Adversarial Attacks</em> accepted at AdvML @ CVPR 2024 <a href="https://cvpr24-advml.github.io/" style="color:burlywood; display:inline">[Link]</a>.</div></li>
+          </ul>
+        </section>
+      </article>
+
+      <!--
+        - #RESEARCH
+      -->
+
+      <article class="about" data-page="research">
+
+        <header>
+          <h2 class="h2 article-title">Research</h2>
         </header>
 
         <section class="about-text">
           <p>
-            Xiang Xu is a Senior Applied Scientist and Tech Lead at AWS AI Labs, where he leads cutting-edge research and development in multi-modal digital trust and safety. His work is at the forefront of building secure, scalable, and trustworthy AI systems that underpin the next generation of digital identity and content authenticity solutions.
-            Xiang has led foundational work on reinforcement fine-tuning, multi-modal red-teaming, post-training safety alignment, and the design of specialized expert models for robust and scalable content verification. His research explores how to make large multi-modal language models more robust, aligned, and efficient, especially in high-risk applications such as identity verification and content moderation.
-            At AWS scale, the systems he designed and deployed serve millions of users worldwide, establishing new benchmarks in biometric authentication, liveness detection, and privacy-preserving AI. His core focus lies in multi-modal digital trust and safety, where he builds intelligent, resilient systems that safeguard digital identities, counter deepfakes, spoofing, and adversarial threats, all while upholding user privacy and ensuring compliance with global security and data protection standards.
-            He is passionate about making AI not just smarter, but safer—building models that see, read, and reason with security, accountability, and human alignment at their core.
-          </p>
-
-          <p>
-            Before joining AWS, he obtained his Ph.D. degree from the <a href="https://www.uh.edu/" style="color:burlywood; display:inline">University of Houston</a> under the mentorship of Professor <a href="https://www.uh.edu/cbl/people/about-director.php" style="color:burlywood; display:inline">Ioannis A. Kakadiaris</a> in 2019. 
-            With over a decade of experience in biometric research and digital identity systems, he has contributed to significant advancements in face recognition, liveness detection, 3D face reconstruction, and adversarial robustness. 
-            His expertise extends to multi-modal computer vision, domain adaptation, and the security challenges of deploying AI systems at scale. 
-            He serves as a reviewer for top-tier conferences including CVPR, ECCV, ICCV, and has been recognized for his contributions to AI safety and digital trust.
-          </p>
-
-          <p>
-            <b>Digital Trust Leadership:</b> He leads cross-functional teams developing next-generation digital identity and trust solutions, with his work directly impacting AWS's approach to secure AI deployment and user protection across multiple services.
-          </p>
-
-          <p>
-            <b>Prospective interns:</b> If you are interested in internship positions in digital trust, AI safety, or multi-modal systems (Ph.D. students preferred), please email me your CV and a research statement highlighting relevant experience.
+            My research and the systems I ship are one loop. Below are the systems I have led at AWS (translated to ideas, since most of the implementations are not public), the open questions driving my current work, and the trajectory that connects them.
           </p>
         </section>
 
         <section class="service">
-          <h3 class="h3 service-title">Core Expertise</h3>
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Post-training" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Post-Training & Safety Alignment</h4>
-                <p class="service-item-text">
-                  Expert in post-training techniques for multi-modal models with focus on safety and trust. Specialized in reinforcement learning on preference optimization to ensure models are aligned with safety requirements for digital trust and safety applications.
-                </p>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="Digital Identity" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Digital Identity & Trust</h4>
-                <p class="service-item-text">
-                  Leading research in digital identity verification, biometric authentication, and liveness detection systems. Expertise in developing robust identity solutions that protect against presentation attacks, deepfakes, and sophisticated spoofing attempts using multi-modal AI.
-                </p>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="Deepfake Detection" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Deepfake Detection & Anti-Spoofing</h4>
-                <p class="service-item-text">
-                  Pioneering research in deepfake detection, presentation attack detection, and adversarial robustness. Developing production-scale systems that protect digital platforms from synthetic media and sophisticated attack vectors.
-                </p>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="Multi-modal AI" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Multi-Modal AI for Security</h4>
-                <p class="service-item-text">
-                  Developing large-scale vision-language models specifically designed for security and trust applications. Expertise in cross-modal understanding, temporal consistency, and real-time processing for digital identity verification systems.
-                </p>
-              </div>
-            </li>
+          <h3 class="h3 service-title">Systems</h3>
+
+          <div style="margin-bottom: 22px; padding: 16px 18px; background: var(--bg-gradient-jet); border-radius: 12px;">
+            <h4 class="h4" style="margin-bottom: 6px;">Self-Evolving Agent <span style="font-weight: 400; color: var(--light-gray-70); font-size: 13px;">— production, AWS</span></h4>
+            <p class="service-item-text" style="text-align: left;">
+              A hierarchical multi-agent system that runs the threat-to-patch loop autonomously. Three top-level agents — Triage, Red Team, Model Patch & Handoff — coordinate specialized subagents that detect threats from tickets and logs, discover and validate attacks, and apply continual fine-tuning with automated benchmarking. Compresses launch cadence by ~75%. The interesting part is the design pattern: separating threat discovery from defense generation lets each side improve without destabilizing the other.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 22px; padding: 16px 18px; background: var(--bg-gradient-jet); border-radius: 12px;">
+            <h4 class="h4" style="margin-bottom: 6px;">Multi-Agent Research Harness <span style="font-weight: 400; color: var(--light-gray-70); font-size: 13px;">— production tooling</span></h4>
+            <p class="service-item-text" style="text-align: left;">
+              A coordination layer for concurrent autonomous agents working on the same codebase: isolated sub-agent contexts, Kanban-style task claims with stale-detection, one git worktree per session, skill-based knowledge injection, and independent verification gates. Outperforms single-session agents on complex tasks at ~6× lower cost and runs 200+ autonomous experiments per sprint. The principle: agents fail more by stepping on each other than by being individually weak.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 22px; padding: 16px 18px; background: var(--bg-gradient-jet); border-radius: 12px;">
+            <h4 class="h4" style="margin-bottom: 6px;">Co-Scientist <span style="font-weight: 400; color: var(--light-gray-70); font-size: 13px;">— internal research agent</span></h4>
+            <p class="service-item-text" style="text-align: left;">
+              An agent for autonomous scientific workflows: deep literature review, hypothesis generation and critique, experiment planning with explicit baselines, automated execution and tracking, and technical-report drafting with citations. Compresses literature surveys from 1–2 weeks to 1–2 days and full research iteration from ~3 months to ~1 month. The lesson: forcing the agent to write a baseline plan before any code runs is what makes its experiments interpretable.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 22px; padding: 16px 18px; background: var(--bg-gradient-jet); border-radius: 12px;">
+            <h4 class="h4" style="margin-bottom: 6px;">Super-Alignment Pipeline <span style="font-weight: 400; color: var(--light-gray-70); font-size: 13px;">— production alignment</span></h4>
+            <p class="service-item-text" style="text-align: left;">
+              End-to-end alignment for multi-modal foundation models: multi-modal red-teaming, distributed LLM-as-judge evaluation, and adversarial post-training with preference optimization. Reduced attack success rate by an order of magnitude across text and vision modalities while preserving task quality. The thing the literature underweights: alignment in production is a moving target. Static reward models decay against adapting attackers, which is why I treat alignment as a continual learning problem.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 22px; padding: 16px 18px; background: var(--bg-gradient-jet); border-radius: 12px;">
+            <h4 class="h4" style="margin-bottom: 6px;">Digital Identity Defense <span style="font-weight: 400; color: var(--light-gray-70); font-size: 13px;">— Amazon Rekognition</span></h4>
+            <p class="service-item-text" style="text-align: left;">
+              Production defense against presentation attacks, deepfakes, and injection attacks for billion-level annual identity checks. Designed a proactive challenge-response paradigm and shipped multiple model updates per year tracking new threat vectors. The technical risk: keeping false positive rates flat for legitimate users while attackers shift from physical spoofs to GenAI deepfakes — a continuous-shift problem that motivated the lifelong-learning research direction.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 22px; padding: 16px 18px; background: var(--bg-gradient-jet); border-radius: 12px;">
+            <h4 class="h4" style="margin-bottom: 6px;">GPU-Accelerated FHE Inference <span style="font-weight: 400; color: var(--light-gray-70); font-size: 13px;">— privacy-preserving AI</span></h4>
+            <p class="service-item-text" style="text-align: left;">
+              Fully Homomorphic Encryption (CKKS, BFV) on GPU with ~45× speedup at zero accuracy loss, enabling encrypted inference and similarity search for regulated markets. The contribution most academic FHE work skips: making the polynomial arithmetic memory-bandwidth efficient on real GPUs, not just asymptotically faster.
+            </p>
+          </div>
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title">Open Questions</h3>
+          <p class="service-item-text" style="margin-bottom: 12px;">
+            The questions I do not yet have good answers to, and that drive my current research:
+          </p>
+          <ul style="padding-left: 18px;">
+            <li><div class="service-item-text" style="margin-bottom: 8px;">How do you measure whether a continual-learning update preserves prior capabilities <em>per skill</em>, not just on aggregate benchmarks? Aggregate accuracy hides catastrophic gaps.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 8px;">Can on-policy distillation merge expert models trained on overlapping tasks without a router penalty? Most current methods either keep all experts (cost) or pick one (forgetting).</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 8px;">What does an alignment objective look like when the threat model is itself learning? RLHF assumes a static preference distribution; production trust-and-safety violates that assumption every day.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 8px;">Where is the right boundary between attention and recurrence in a long-context VLM? My current bet (~25% recurrent layers) was empirical. The principled answer is unclear.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 8px;">How much of the ML research loop can a multi-agent system actually drive end-to-end before the human becomes the bottleneck for taste, not labor?</div></li>
           </ul>
         </section>
 
         <section class="service">
-          <h3 class="h3 service-title">Recent News</h3>
-          <ul>
-            <li>
-              <div class="service-item-text">[2025/05] 2 patents granted recently related to digital identity and trust systems. 
-              </div>
-            </li>
-            <li>
-              <div class="service-item-text">
-                [2025/03] Three papers accepted @CVPR 2025, covering model diagnosis and improvement, source-free adaptation for security patching and customization, and grounding in vision-language models <a href="https://www.linkedin.com/feed/update/urn:li:activity:7339443093512830979/" style="color:burlywood; display:inline">[Link]</a>
-              </div>
-            </li>
-            <li>
-              <div class="service-item-text">[2024/07] 1 patent granted titled "Evaluating biometric authorization systems with synthesized images"  
-              </div>
-            </li>
-            <li>
-              <div class="service-item-text">
-                [2024/04] Honored to serve as keynote speaker for 5th Chalearn Face Anti-Spoofing Workshop and Challenge @ CVPR2024 <a href="https://sites.google.com/view/face-anti-spoofing-challenge/welcome/challengecvpr2024" style="color:burlywood; display:inline">[Link]</a>
-              </div>
-            </li>
-            <li>
-              <div class="service-item-text">
-                [2024/04] Paper "Sharpness-Aware Optimization for Real-World Adversarial Attacks for Diverse Compute Platforms with Enhanced Transferability" accepted at AdvML@CVPR2024 <a href="https://cvpr24-advml.github.io" style="color:burlywood; display:inline">[Link]</a>
-              </div>
-            </li>
+          <h3 class="h3 service-title">Research Arc</h3>
+          <p class="service-item-text" style="margin-bottom: 12px;">
+            A coherent thread across a decade — each stage exposed the bottleneck that motivated the next.
+          </p>
+          <ul style="padding-left: 18px;">
+            <li><div class="service-item-text" style="margin-bottom: 6px;"><b>2014–2019, Ph.D.:</b> 3D face reconstruction → face recognition under occlusion. Learned that robustness was the binding constraint, not raw accuracy.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 6px;"><b>2019–2021:</b> Domain adaptation (d-SNE, oral CVPR 2019), liveness and anti-spoofing. Took the robustness lesson into deployable systems.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 6px;"><b>2021–2023:</b> Deepfake detection, multi-modal trust. Discovered that defenses decay because attackers move; static models are not enough.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 6px;"><b>2023–2025:</b> Adversarial post-training, super-alignment, agentic systems for the threat-to-patch loop. Built the systems-level answer to decay.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 6px;"><b>2025–present:</b> Continual learning, on-policy distillation, hybrid VLMs. Building the model-level answer to decay so the systems can run faster.</div></li>
           </ul>
         </section>
-        <!--
-          - testimonials modal
-        -->
-        <div class="modal-container" data-modal-container>
 
-          <div class="overlay" data-overlay></div>
+        <section class="service">
+          <h3 class="h3 service-title">Talks & Service</h3>
+          <ul style="padding-left: 18px;">
+            <li><div class="service-item-text" style="margin-bottom: 8px;"><b>Keynote</b> — 5th Chalearn Face Anti-Spoofing Workshop @ CVPR 2024 <a href="https://sites.google.com/view/face-anti-spoofing-challenge/welcome/challengecvpr2024" style="color:burlywood; display:inline">[Link]</a>.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 8px;"><b>Best Paper Award</b> — ICCV Workshop on Face Anti-Spoofing, 2021.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 8px;"><b>Reviewer</b> — CVPR, ICCV, ECCV, NeurIPS, ICLR, AAAI.</div></li>
+            <li><div class="service-item-text" style="margin-bottom: 8px;"><b>Patents</b> — 5+ issued and 5+ in review, spanning multi-modal AI, privacy-preserving inference, and biometric security.</div></li>
+          </ul>
+        </section>
 
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-          </section>
-
-        </div>
       </article>
 
       <article class="about-text" data-page="publications">
 
         <header>
           <h2 class="h2 article-title">Selected Publications</h2>
-          <h3>For most updated and comprehensive publication list, please check <a href="https://scholar.google.com/citations?user=Khfy-80AAAAJ" style="color:burlywood; display:inline">Google Scholar</a>.</h3>
+          <h3>For the most up-to-date list, see <a href="https://scholar.google.com/citations?user=Khfy-80AAAAJ" style="color:burlywood; display:inline">Google Scholar</a>. <span style="color: var(--light-gray-70); font-weight: normal;">First / lead author works are highlighted.</span></h3>
         </header>
         
         <section class="service">
@@ -301,30 +348,60 @@
                 <td style="border-style: none; border-width: medium; background-color: #FF6B6B;" valign="top" width="14"></td>
                 <td style="border-style: none; border-width: medium;" valign="top" width="1108">
                   <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
-                    <strong>Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing</strong> <br>
-                    Xuanbai Chen, Xiang Xu, Zhihua Li, Tianchen Zhao, Pietro Perona, Qin Zhang, Yifan Xing<br>
+                    <strong>Continual On-Policy Distillation from Experts</strong> <br>
+                    <strong>Xiang Xu</strong>, et al.<br>
+                    <em>NeurIPS, 2026 (In Submission)</em>
+                </td>
+              </tr>
+              <tr>
+                <td style="border-style: none; border-width: medium;" valign="top" width="19">&nbsp;</td>
+                <td style="border-style: none; border-width: medium; background-color: #FF6B6B;" valign="top" width="14"></td>
+                <td style="border-style: none; border-width: medium;" valign="top" width="1108">
+                  <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
+                    <strong>Beyond Disjoint Tasks: Towards More Natural Continual Learning for Vision-Language Models</strong> <br>
+                    <strong>Xiang Xu</strong>, et al.<br>
+                    <em>ECCV, 2026 (In Submission)</em>
+                </td>
+              </tr>
+              <tr>
+                <td style="border-style: none; border-width: medium;" valign="top" width="19">&nbsp;</td>
+                <td style="border-style: none; border-width: medium; background-color: #FFCC99;" valign="top" width="14"></td>
+                <td style="border-style: none; border-width: medium;" valign="top" width="1108">
+                  <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
+                    Salient Concept-Aware Generative Data Augmentation<br>
+                    Tianchen Zhao, Xuanbai Chen, <strong>Xiang Xu</strong>, et al.<br>
+                    <em>NeurIPS, 2025</em>
+                </td>
+              </tr>
+              <tr>
+                <td style="border-style: none; border-width: medium;" valign="top" width="19">&nbsp;</td>
+                <td style="border-style: none; border-width: medium; background-color: #FFCC99;" valign="top" width="14"></td>
+                <td style="border-style: none; border-width: medium;" valign="top" width="1108">
+                  <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
+                    Model Diagnosis and Correction via Linguistic and Implicit Attribute Editing <br>
+                    Xuanbai Chen, <strong>Xiang Xu</strong>, Zhihua Li, Tianchen Zhao, Pietro Perona, Qin Zhang, Yifan Xing<br>
                     <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025</em> <br>
                     <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Chen_Model_Diagnosis_and_Correction_via_Linguistic_and_Implicit_Attribute_Editing_CVPR_2025_paper.pdf" style="color:burlywood; display:inline">Paper</a>
                 </td>
               </tr>
               <tr>
                 <td style="border-style: none; border-width: medium;" valign="top" width="19">&nbsp;</td>
-                <td style="border-style: none; border-width: medium; background-color: #FF6B6B;" valign="top" width="14"></td>
+                <td style="border-style: none; border-width: medium; background-color: #FFCC99;" valign="top" width="14"></td>
                 <td style="border-style: none; border-width: medium;" valign="top" width="1108">
                   <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
-                    <strong>Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing</strong> <br>
-                    Zhuowei Li, Tianchen Zhao, Xiang Xu, Zheng Zhang, Zhihua Li, Xuanbai Chen, Qin Zhang, Alessandro Bergamo, Anil K. Jain, Yifan Xing<br>
+                    Optimal Transport-Guided Source-Free Adaptation for Face Anti-Spoofing <br>
+                    Zhuowei Li, Tianchen Zhao, <strong>Xiang Xu</strong>, Zheng Zhang, Zhihua Li, Xuanbai Chen, Qin Zhang, Alessandro Bergamo, Anil K. Jain, Yifan Xing<br>
                     <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025</em> <br>
                     <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Li_Optimal_Transport-Guided_Source-Free_Adaptation_for_Face_Anti-Spoofing_CVPR_2025_paper.pdf" style="color:burlywood; display:inline">Paper</a>
                 </td>
               </tr>
               <tr>
                 <td style="border-style: none; border-width: medium;" valign="top" width="19">&nbsp;</td>
-                <td style="border-style: none; border-width: medium; background-color: #FF6B6B;" valign="top" width="14"></td>
+                <td style="border-style: none; border-width: medium; background-color: #FFCC99;" valign="top" width="14"></td>
                 <td style="border-style: none; border-width: medium;" valign="top" width="1108">
                   <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
-                    <strong>Ground-V: Teaching VLMs to Ground Complex Instructions in Pixels</strong> <br>
-                    Yongshuo Zong, Qin Zhang, Dongsheng An, Zhihua Li, Xiang Xu, Linghan Xu, Zhuowen Tu, Yifan Xing, Onkar Dabeer<br>
+                    Ground-V: Teaching VLMs to Ground Complex Instructions in Pixels <br>
+                    Yongshuo Zong, Qin Zhang, Dongsheng An, Zhihua Li, <strong>Xiang Xu</strong>, Linghan Xu, Zhuowen Tu, Yifan Xing, Onkar Dabeer<br>
                     <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025</em> <br>
                     <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zong_Ground-V_Teaching_VLMs_to_Ground_Complex_Instructions_in_Pixels_CVPR_2025_paper.pdf" style="color:burlywood; display:inline">Paper</a>
                 </td>
@@ -335,8 +412,8 @@
                 <td style="border-style: none; border-width: medium;" valign="top" width="1108">
                   <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
                     Sharpness-aware optimization for real-world adversarial attacks for diverse compute platforms with enhanced transferability <br>
-                    Muchao Ye, Xiang Xu, Qin Zhang, Jon Wu <br>
-                    IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2024 <br>
+                    Muchao Ye, <strong>Xiang Xu</strong>, Qin Zhang, Jon Wu <br>
+                    <em>CVPR Workshops (AdvML), 2024</em> <br>
                     <a href="https://www.amazon.science/publications/sharpness-aware-optimization-for-real-world-adversarial-attacks-for-diverse-compute-platforms-with-enhanced-transferability" style="color:burlywood; display:inline">Paper</a>
                 </td>
               </tr>
@@ -345,42 +422,42 @@
                 <td style="border-style: none; border-width: medium; background-color: #FFCC99;" valign="top" width="14"></td>
                 <td style="border-style: none; border-width: medium;" valign="top" width="1108">
                   <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
-                    Learning self-consistency for deepfake detection<br>
-                    Tianchen Zhao, Xiang Xu, Mingze Xu, Hui Ding, Yuanjun Xiong, Wei Xia <br>
-                    IEEE/CVF International Conference on Computer Vision (ICCV), 2021 (Oral presentation) <br>
+                    Learning Self-Consistency for Deepfake Detection<br>
+                    Tianchen Zhao, <strong>Xiang Xu</strong>, Mingze Xu, Hui Ding, Yuanjun Xiong, Wei Xia <br>
+                    <em>IEEE/CVF International Conference on Computer Vision (ICCV), 2021 (Oral)</em> <br>
                     <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Zhao_Learning_Self-Consistency_for_Deepfake_Detection_ICCV_2021_paper.pdf" style="color:burlywood; display:inline">Paper</a>
                 </td>
               </tr>
               <tr>
                 <td style="border-style: none; border-width: medium;" valign="top" width="19">&nbsp;</td>
-                <td style="border-style: none; border-width: medium; background-color: #FFCC99;" valign="top" width="14"></td>
+                <td style="border-style: none; border-width: medium; background-color: #FF6B6B;" valign="top" width="14"></td>
                 <td style="border-style: none; border-width: medium;" valign="top" width="1108">
                   <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
-                    On Improving Temporal Consistency for Online Face Liveness Detection System<br>
-                    Xiang Xu, Yuanjun Xiong, Wei Xia <br>
-                    IEEE/CVF International Conference on Computer Vision (CVPR) Workshops, 2021 (Best Paper Award) <br>
+                    <strong>On Improving Temporal Consistency for Online Face Liveness Detection System</strong><br>
+                    <strong>Xiang Xu</strong>, Yuanjun Xiong, Wei Xia <br>
+                    <em>ICCV Workshops, 2021 (Best Paper Award)</em> <br>
                     <a href="https://openaccess.thecvf.com/content/ICCV2021W/ChaLearn_FAS/papers/Xu_On_Improving_Temporal_Consistency_for_Online_Face_Liveness_Detection_System_ICCVW_2021_paper.pdf" style="color:burlywood; display:inline">Paper</a>
                 </td>
               </tr>
               <tr>
                 <td style="border-style: none; border-width: medium;" valign="top" width="19">&nbsp;</td>
-                <td style="border-style: none; border-width: medium; background-color: #FFCC99;" valign="top" width="14"></td>
+                <td style="border-style: none; border-width: medium; background-color: #FF6B6B;" valign="top" width="14"></td>
                 <td style="border-style: none; border-width: medium;" valign="top" width="1108">
                   <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
-                    On Improving the Generalization of Face Recognition in the Presence of Occlusions<br>
-                    Xiang Xu, Nikolaos Sarafianos, Ioannis Kakadiaris <br>
-                    IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2020 <br>
+                    <strong>On Improving the Generalization of Face Recognition in the Presence of Occlusions</strong><br>
+                    <strong>Xiang Xu</strong>, Nikolaos Sarafianos, Ioannis Kakadiaris <br>
+                    <em>CVPR Workshops, 2020</em> <br>
                     <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w48/Xu_On_Improving_the_Generalization_of_Face_Recognition_in_the_Presence_CVPRW_2020_paper.pdf" style="color:burlywood; display:inline">Paper</a>
                 </td>
               </tr>
               <tr>
                 <td style="border-style: none; border-width: medium;" valign="top" width="19">&nbsp;</td>
-                <td style="border-style: none; border-width: medium; background-color: #FFCC99;" valign="top" width="14"></td>
+                <td style="border-style: none; border-width: medium; background-color: #FF6B6B;" valign="top" width="14"></td>
                 <td style="border-style: none; border-width: medium;" valign="top" width="1108">
                   <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
-                    d-SNE: Domain Adaptation using Stochastic Neighborhood Embedding<br>
-                    Xiang Xu, Xiong Zhou, Ragav Venkatesan, Gurumurthy Swaminathan, Orchid Majumder <br>
-                    IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (Oral presentation) <br>
+                    <strong>d-SNE: Domain Adaptation using Stochastic Neighborhood Embedding</strong><br>
+                    <strong>Xiang Xu</strong>, Xiong Zhou, Ragav Venkatesan, Gurumurthy Swaminathan, Orchid Majumder <br>
+                    <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (Oral)</em> <br>
                     <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Xu_d-SNE_Domain_Adaptation_Using_Stochastic_Neighborhood_Embedding_CVPR_2019_paper.pdf" style="color:burlywood; display:inline">Paper</a>
                 </td>
               </tr>
@@ -390,8 +467,8 @@
                 <td style="border-style: none; border-width: medium;" valign="top" width="1108">
                   <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
                     Adversarial Representation Learning for Text-to-Image Matching<br>
-                    Nikolaos Sarafianos, Xiang Xu, Ioannis A. Kakadiaris <br>
-                    IEEE/CVF International Conference on Computer Vision (ICCV), 2019 <br>
+                    Nikolaos Sarafianos, <strong>Xiang Xu</strong>, Ioannis A. Kakadiaris <br>
+                    <em>IEEE/CVF International Conference on Computer Vision (ICCV), 2019</em> <br>
                     <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Sarafianos_Adversarial_Representation_Learning_for_Text-to-Image_Matching_ICCV_2019_paper.pdf" style="color:burlywood; display:inline">Paper</a>
                 </td>
               </tr>
@@ -401,8 +478,8 @@
                 <td style="border-style: none; border-width: medium;" valign="top" width="1108">
                   <p style="margin-left: 10px; line-height: 150%; margin-top: 8px; margin-bottom: 8px;">
                     Deep Imbalanced Attribute Classification using Visual Attention Aggregation<br>
-                    Nikolaos Sarafianos, Xiang Xu, Ioannis A. Kakadiaris <br>
-                    European Conference on Computer Vision (ECCV), 2018 <br>
+                    Nikolaos Sarafianos, <strong>Xiang Xu</strong>, Ioannis A. Kakadiaris <br>
+                    <em>European Conference on Computer Vision (ECCV), 2018</em> <br>
                     <a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Nikolaos_Sarafianos_Deep_Imbalanced_Attribute_ECCV_2018_paper.pdf" style="color:burlywood; display:inline">Paper</a>
                 </td>
               </tr>
@@ -416,10 +493,10 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="cv">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">CV</h2>
         </header>
 
         <section class="timeline">
@@ -436,65 +513,37 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Senior Applied Scientist</h4>
+              <h4 class="h4 timeline-item-title">Tech Lead, Senior Applied Scientist — AWS AI Labs</h4>
 
-              <span>2019 — Present</span>
+              <span>2019 — Present, New York, NY</span>
 
-              <p class="timeline-text">
-                AWS AI Labs - Leading research in digital trust, identity verification, and AI safety. Developing production-scale deepfake detection systems, liveness detection technologies, and multi-modal post-training techniques for secure digital identity applications. Managing cross-functional teams working on next-generation trust and safety solutions.
+              <p class="timeline-text" style="margin-bottom: 0;">
+                <b>Agentic AI.</b> Built production multi-agent systems for autonomous ML lifecycle management across multiple AWS AI services.
               </p>
+              <ul class="timeline-text" style="margin-top: 6px; padding-left: 18px; list-style: disc;">
+                <li><b>Self-Evolving Agent</b> — Hierarchical, self-evolving agent system with three top-level agents (Triage, Red Team, Model Patch & Handoff) and specialized subagents. Triage detects threats from tickets and logs, Red Team discovers and validates attacks autonomously, and Model Patch applies continual fine-tuning with automated benchmarking and handoff. Compresses launch cadence by ~75% with limited resources.</li>
+                <li><b>Multi-Agent Harness</b> — Designed isolated sub-agent contexts, Kanban-style task coordination (claim/release, stale detection, one worktree per session), skill-based knowledge injection, and independent verification gating. Outperforms single-session agents on complex tasks at ~6× lower cost, enabling 200+ autonomous experiments per sprint.</li>
+                <li><b>Co-Scientist</b> — AI research agent for autonomous scientific workflows: deep literature review, hypothesis generation and critique, experiment planning with baselines, automated execution and tracking, and technical report drafting with citations. Compresses literature surveys from 1–2 weeks to 1–2 days and research iteration cycles from ~3 months to ~1 month.</li>
+              </ul>
 
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="trophy-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Key Achievements & Leadership</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Digital Identity Verification Platform</h4>
-
-              <span>2023 — 2024</span>
-
-              <p class="timeline-text">
-                Led the development of AWS's next-generation digital identity platform, achieving 99.8% liveness detection accuracy while serving 5M+ daily verifications. Implemented advanced post-training techniques that reduced spoofing attacks by 75% and false positives by 60%.
+              <p class="timeline-text" style="margin-top: 14px; margin-bottom: 0;">
+                <b>Alignment & Safety.</b> Built and deployed alignment, trust, and privacy programs across foundation-model services.
               </p>
+              <ul class="timeline-text" style="margin-top: 6px; padding-left: 18px; list-style: disc;">
+                <li><b>Super-Alignment</b> — End-to-end alignment pipeline spanning multi-modal red-teaming, distributed evaluation with LLM-as-judge scoring, and large multi-modal model alignment via adversarial post-training and preference optimization. Reduced attack success rate by an order of magnitude across text and vision while preserving task quality.</li>
+                <li><b>Digital Identity</b> — Led Amazon Rekognition digital identity verification, defending against presentation attacks, deepfakes, and injection attacks. Designed a proactive challenge-response paradigm serving billion-level annual checks; shipped multiple model updates per year with major security and usability improvements.</li>
+                <li><b>Privacy</b> — Pioneered GPU-accelerated Fully Homomorphic Encryption with ~45× speedup at zero accuracy loss, enabling production-viable encrypted inference and similarity search for regulated markets (financial services, healthcare).</li>
+              </ul>
 
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Deepfake Detection System</h4>
-
-              <span>2022 — 2023</span>
-
-              <p class="timeline-text">
-                Pioneered production-scale deepfake detection using constitutional AI and multi-modal post-training. System deployed across multiple AWS services, detecting 99.2% of synthetic media while maintaining real-time performance for digital trust applications.
+              <p class="timeline-text" style="margin-top: 14px; margin-bottom: 0;">
+                <b>Post-Training.</b> Drive the research frontier on efficient learning and adaptation of foundation models.
               </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Multi-Modal Trust Framework</h4>
-
-              <span>2021 — 2022</span>
-
-              <p class="timeline-text">
-                Developed RLHF-based trust scoring for digital identity systems, combining biometric signals with behavioral analysis. Framework now standard for AWS identity services, improving security while reducing friction for legitimate users.
-              </p>
+              <ul class="timeline-text" style="margin-top: 6px; padding-left: 18px; list-style: disc;">
+                <li><b>Continual Learning & Distillation</b> — Frameworks for VLMs and LLMs that detect semantic overlap across tasks, consolidate redundant experts via on-policy self-distillation, and route inputs through zero-parameter or GMM-based routers. Outperforms strongest baselines by +7–15 points across disjoint and overlapping benchmarks while reducing deployed adapters up to 3×. Created the first VLM continual-learning benchmark with controlled inter-task overlap.</li>
+                <li><b>Hybrid VLM Architecture</b> — Replaced 25% of attention layers with linear-time recurrent layers (GKA) for constant-memory, constant-latency inference on long-context agentic workloads. Progressive distillation from the dense teacher plus VL and tool-calling fine-tuning. Near-parity on VL benchmarks with 1.3–1.5× inference speedup at long contexts.</li>
+                <li><b>Hardware-Aware Distillation</b> — Training methods for deploying LLMs on analog in-memory computing. Identified an agentic cliff where structured outputs fail ~2× faster than general knowledge under weight noise. Staged curriculum preserves performance within 2.5 points through incremental hardware non-idealities; reverse-linear noise schedule matches clean-training loss within 0.003.</li>
+                <li><b>Omni-Modal Trust & Verification</b> — Trained omni-modal VLMs to verify media across image, video, and audio by detecting semantic inconsistencies, temporal artifacts, and audio-visual mismatches, with chain-of-thought reasoning for explainable decisions and strong generalization to unseen attacks.</li>
+              </ul>
 
             </li>
 
@@ -514,454 +563,94 @@
           <ol class="timeline-list">
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">University of Houston</h4>
-              <span>2014 — 2019</span>
+              <span>2014 — 2019, Houston, TX</span>
               <p class="timeline-text">
-                PH.D. in Computer Science
+                Ph.D. in Computer Science. Dissertation: <em>Face Recognition in the Presence of Variance in Pose, Expression, and Occlusions</em>. Advised by Prof. Ioannis A. Kakadiaris.
               </p>
             </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Beijing University of Posts and Telecommunications</h4>
-              <span>2009 — 2013</span>
+              <span>2009 — 2013, Beijing, China</span>
               <p class="timeline-text">
-                B.S. IN Telecommunication Engineering
+                B.S. in Telecommunication Engineering.
               </p>
-
             </li>
 
           </ol>
 
         </section>
 
-      </article>
+        <section class="timeline">
 
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <!-- <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li> -->
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <!-- <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li> -->
-
-            </ul>
-
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Technical Skills</h3>
           </div>
 
-          <!-- <ul class="project-list"> -->
-
-            <!-- <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li> -->
-
-            <!-- <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Agentic AI</h4>
+              <p class="timeline-text">
+                Multi-agent orchestration, co-scientist systems, tool use, persistent memory, long-horizon planning.
+              </p>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Lifelong Learning</h4>
+              <p class="timeline-text">
+                Overlap-aware continual learning, on-policy distillation, LoRA / MoE merging, expert consolidation, task-overlap detection, self-evolving model updates, benchmark design.
+              </p>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Alignment & Safety</h4>
+              <p class="timeline-text">
+                SFT, RLHF, reward modeling, adversarial post-training, multi-modal red-teaming, LLM-as-judge evaluation, prompt-injection defense, preference optimization, OOD robustness.
+              </p>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Multimodal & Privacy</h4>
+              <p class="timeline-text">
+                VLMs, omni-modal models, cross-modal alignment, chain-of-thought reasoning, hybrid architectures (GKA), Fully Homomorphic Encryption (CKKS, BFV).
+              </p>
             </li>
+          </ol>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+        </section>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+        <section class="timeline">
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="trophy-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Service & Recognition</h3>
+          </div>
 
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Keynote</h4>
+              <p class="timeline-text">5th Chalearn Face Anti-Spoofing Workshop @ CVPR 2024.</p>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Best Paper Award</h4>
+              <p class="timeline-text">ICCV Workshop on Face Anti-Spoofing, 2021.</p>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Reviewer</h4>
+              <p class="timeline-text">CVPR, ICCV, ECCV, NeurIPS, ICLR, AAAI.</p>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li> -->
-
-          <!-- </ul> -->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Patents</h4>
+              <p class="timeline-text">5+ issued and 5+ in review, spanning multi-modal AI, privacy-preserving inference, and biometric security.</p>
+            </li>
+          </ol>
 
         </section>
 
       </article>
 
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <!-- <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header> -->
-
-        <!-- <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section> -->
-
-      <!-- </article> -->
 
     </div>
 

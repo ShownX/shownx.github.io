@@ -1881,3 +1881,35 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+/*-----------------------------------*\
+  #SCIENTIST CONTENT OVERRIDES
+\*-----------------------------------*/
+
+/* Better readable line length and spacing for long-form research content */
+.about-text p { max-width: 68ch; }
+.about-text { color: var(--light-gray); line-height: 1.65; }
+
+/* Service section list spacing for News / Open Questions / Arc */
+.service > ul { padding-left: 18px; }
+.service > ul > li { margin-bottom: 6px; list-style: disc; color: var(--light-gray); }
+.service > ul > li .service-item-text { margin-bottom: 0; text-align: left; }
+
+/* Inline link color: replace inline burlywood styling with a cleaner accent */
+a { color: var(--orange-yellow-crayola); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Systems cards on the Research page */
+[data-page="research"] .service-item-text {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.65;
+}
+[data-page="research"] h4.h4 {
+  color: var(--orange-yellow-crayola);
+}
+
+/* Tighter, more academic publication entries */
+#publication-table p { font-size: 14px; }
+#publication-table p strong { color: var(--white-2); }
