@@ -259,3 +259,45 @@ ul.task-list input[type="checkbox"] {
 .d2h-diff-table {
   position: relative;
 }
+
+
+// Profile social block: small icon row directly under the avatar/photo.
+.profile-social {
+  margin-top: 0.6rem;
+  text-align: center;
+
+  .contact-icons {
+    font-size: 1.4rem;
+    line-height: 1.4;
+
+    a {
+      margin: 0 0.35rem;
+
+      img {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-bottom: 0;
+      }
+
+      svg {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-bottom: 0;
+
+        image {
+          width: 1.4rem;
+          height: 1.4rem;
+        }
+      }
+
+      i::before {
+        color: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+
+      &:hover i::before {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}

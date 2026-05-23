@@ -10,4 +10,4 @@ Continual learning frameworks for VLMs and LLMs that detect semantic overlap acr
 
 I created the first VLM continual-learning benchmark with controlled inter-task overlap, because the standard disjoint-task setup hides the failure mode that matters most in production: tasks that share concepts but differ in distribution.
 
-This work feeds two ECCV 2026 / NeurIPS 2026 submissions: *Beyond Disjoint Tasks* and *Continual On-Policy Distillation from Experts*.
+This is the model-side complement to the production agent system: the agent answers *how to ship updates fast*, this work answers *how to ship them without forgetting*.

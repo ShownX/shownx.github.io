@@ -6,7 +6,7 @@ importance: 1
 category: systems
 ---
 
-A hierarchical, self-evolving agent system that runs the threat-to-patch loop autonomously across multiple AWS AI services. Three top-level agents — Triage, Red Team, and Model Patch & Handoff — coordinate specialized subagents:
+A hierarchical, self-evolving agent system that runs the threat-to-patch loop autonomously across multiple Amazon AI services. Three top-level agents — Triage, Red Team, and Model Patch & Handoff — coordinate specialized subagents:
 
 - **Triage** detects emerging threats from tickets and logs and routes them to the right defender.
 - **Red Team** discovers and validates new attacks autonomously, building a continually refreshed adversarial dataset.

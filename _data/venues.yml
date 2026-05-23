@@ -21,3 +21,50 @@
 "NeurIPS":
   url: https://neurips.cc/
   color: "#A5235A"
+
+"WACV":
+  url: https://wacv.thecvf.com/
+  color: "#0B6E99"
+
+"ICIP":
+  url: https://2025.ieeeicip.org/
+  color: "#3F6184"
+
+"ICB":
+  color: "#4F6D7A"
+
+"FG":
+  color: "#6B5B95"
+
+"IJCB":
+  color: "#5B6B95"
+
+"BTAS":
+  color: "#566573"
+
+"ISBA":
+  color: "#7F8C8D"
+
+"TBIOM":
+  color: "#34495E"
+
+"JISE":
+  color: "#34495E"
+
+"Neurocomputing":
+  color: "#34495E"
+
+"arXiv":
+  color: "#B71C1C"
+
+"Patent":
+  color: "#6B7280"
+
+"Book":
+  color: "#7E5A4A"
+
+"Thesis":
+  color: "#4B5C6B"
+
+"Tech Report":
+  color: "#4B5C6B"

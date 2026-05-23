@@ -9,8 +9,10 @@ last_name: Xu
 contact_note: >
   The fastest way to reach me is by email.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Xiang Xu — Tech Lead and Senior Applied Scientist at AWS AI Labs.
-  I work on co-designing lifelong learning and adversarial post-training so foundation models keep improving themselves while staying aligned in production.
+  Xiang Xu — Tech Lead and Senior Applied Scientist at Amazon AGI.
+  I co-design lifelong learning and adversarial post-training so foundation models
+  stay useful and aligned in production — building agentic systems, alignment pipelines,
+  and continual-learning methods at multimodal scale.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: agentic-ai, alignment, lifelong-learning, post-training, vision-language-models, multimodal, AWS, foundation-models
