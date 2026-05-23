@@ -1,0 +1,23 @@
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#1F6FEB"
+
+"CVPRW":
+  url: https://cvpr.thecvf.com/
+  color: "#5DA8FF"
+
+"ICCV":
+  url: https://iccv.thecvf.com/
+  color: "#5C2D91"
+
+"ICCVW":
+  url: https://iccv.thecvf.com/
+  color: "#9C6ABF"
+
+"ECCV":
+  url: https://eccv.ecva.net/
+  color: "#0BAA6A"
+
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#A5235A"
