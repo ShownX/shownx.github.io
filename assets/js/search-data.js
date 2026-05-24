@@ -4,38 +4,24 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-research",
-          title: "research",
+          title: "Research",
           description: "Systems I have led, the ideas they embody, and the open questions I am working on now.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-publications",
-          title: "publications",
-          description: "Selected publications. For the most up-to-date list, see Google Scholar.",
+          title: "Publications",
+          description: "For the most up-to-date list, see Google Scholar.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
-          },
-        },{id: "nav-notes",
-          title: "notes",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
           },
         },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
@@ -68,26 +54,41 @@ ninja.data = [{
           section: "News",},{id: "news-patent-granted-evaluating-biometric-authorization-systems-with-synthesized-images",
           title: 'Patent granted: Evaluating biometric authorization systems with synthesized images.',
           description: "",
-          section: "News",},{id: "news-three-papers-accepted-at-cvpr-2025-model-diagnosis-source-free-anti-spoofing-adaptation-and-grounded-vlms",
-          title: 'Three papers accepted at CVPR 2025 — model diagnosis, source-free anti-spoofing adaptation, and...',
+          section: "News",},{id: "news-three-papers-accepted-at-cvpr-2025-model-diagnosis-and-correction-optimal-transport-guided-source-free-adaptation-and-ground-v",
+          title: 'Three papers accepted at CVPR 2025 — Model Diagnosis and Correction, Optimal Transport-Guided...',
           description: "",
-          section: "News",},{id: "news-two-patents-granted-on-digital-identity-and-trust-systems",
-          title: 'Two patents granted on digital identity and trust systems.',
+          section: "News",},{id: "news-two-patents-granted-on-digital-identity-and-trust-systems-liveness-detection-based-on-motion-face-and-context-cues-and-liveness-detection-based-on-gesture-validation-facial-expression-analysis-and-concurrency-validation",
+          title: 'Two patents granted on digital identity and trust systems: Liveness Detection Based on...',
           description: "",
           section: "News",},{id: "news-paper-salient-concept-aware-generative-data-augmentation-accepted-to-neurips-2025",
           title: 'Paper Salient Concept-Aware Generative Data Augmentation accepted to NeurIPS 2025.',
           description: "",
-          section: "News",},{id: "news-submitted-beyond-disjoint-tasks-towards-more-natural-continual-learning-for-vision-language-models-to-eccv-2026",
-          title: 'Submitted Beyond Disjoint Tasks: Towards More Natural Continual Learning for Vision-Language Models to...',
+          section: "News",},{id: "news-paper-authguard-generalizable-deepfake-detection-via-language-guidance-accepted-at-wacv-2026",
+          title: 'Paper AuthGuard: Generalizable Deepfake Detection via Language Guidance accepted at WACV 2026.',
           description: "",
-          section: "News",},{id: "news-submitted-continual-on-policy-distillation-from-experts-to-neurips-2026",
-          title: 'Submitted Continual On-Policy Distillation from Experts to NeurIPS 2026.',
+          section: "News",},{id: "news-paper-decoupling-vision-and-language-codebook-anchored-visual-adaptation-accepted-at-cvpr-2026",
+          title: 'Paper Decoupling Vision and Language: Codebook Anchored Visual Adaptation accepted at CVPR 2026....',
           description: "",
           section: "News",},{id: "projects-omni-modal-trust-amp-verification",
           title: 'Omni-Modal Trust &amp;amp; Verification',
           description: "Detecting tampered media across image, video, and audio with explainable reasoning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_omni_modal_trust/";
+            },},{id: "projects-billion-scale-face-recognition",
+          title: 'Billion-Scale Face Recognition',
+          description: "Pose- and occlusion-invariant face recognition behind production identity at scale.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/11_face_recognition/";
+            },},{id: "projects-liveness-detection",
+          title: 'Liveness Detection',
+          description: "Production face liveness with temporal consistency, behind billion-scale identity checks.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/12_liveness_detection/";
+            },},{id: "projects-deepfake-detection",
+          title: 'Deepfake Detection',
+          description: "Self-consistency and language guidance for generalizable deepfake detection.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/13_deepfake_detection/";
             },},{id: "projects-self-evolving-agent",
           title: 'Self-Evolving Agent',
           description: "Hierarchical multi-agent system that runs the threat-to-patch loop autonomously.",
@@ -103,14 +104,14 @@ ninja.data = [{
           description: "AI agent that drives autonomous research workflows end-to-end.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_co_scientist/";
-            },},{id: "projects-super-alignment-pipeline",
-          title: 'Super-Alignment Pipeline',
+            },},{id: "projects-super-co-alignment",
+          title: 'Super Co-Alignment',
           description: "End-to-end alignment for multi-modal foundation models.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_super_alignment/";
             },},{id: "projects-digital-identity-defense",
           title: 'Digital Identity Defense',
-          description: "Production identity verification at billion-level scale on Amazon Rekognition.",
+          description: "Tech lead for Amazon Rekognition digital identity at billion-level annual scale.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_digital_identity/";
             },},{id: "projects-gpu-accelerated-fhe-inference",
@@ -118,13 +119,13 @@ ninja.data = [{
           description: "Privacy-preserving inference and similarity search at production speed.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_fhe_inference/";
-            },},{id: "projects-overlap-aware-continual-learning-for-vlms",
-          title: 'Overlap-Aware Continual Learning for VLMs',
+            },},{id: "projects-continual-learning-for-fms",
+          title: 'Continual Learning for FMs',
           description: "Continual learning that drops the disjoint-task assumption.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_continual_learning/";
-            },},{id: "projects-hybrid-attention-recurrent-vlm",
-          title: 'Hybrid Attention/Recurrent VLM',
+            },},{id: "projects-hybrid-attention-recurrent-fm",
+          title: 'Hybrid Attention/Recurrent FM',
           description: "Linear-time recurrent layers (GKA) for long-context agentic workloads.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_hybrid_vlm/";
