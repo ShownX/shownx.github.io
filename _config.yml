@@ -4,10 +4,9 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Xiang
-middle_name:
+middle_name: "(Sean)"
 last_name: Xu
-contact_note: >
-  The fastest way to reach me is by email.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Xiang Xu — Tech Lead and Senior Applied Scientist at Amazon AGI.
   I co-design lifelong learning and adversarial post-training so foundation models

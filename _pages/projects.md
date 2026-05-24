@@ -1,11 +1,11 @@
 ---
 layout: page
-title: research
+title: Research
 permalink: /research/
 description: Systems I have led, the ideas they embody, and the open questions I am working on now.
 nav: true
 nav_order: 1
-display_categories: [systems, current]
+display_categories: [systems, current, earlier]
 horizontal: false
 ---
 
